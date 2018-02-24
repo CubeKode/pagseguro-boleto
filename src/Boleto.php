@@ -3,6 +3,7 @@
 namespace PagSeguro;
 
 use PagSeguro\Core\PagSeguro;
+use PagSeguro\Config\Config;
 use PagSeguro\Core\Utils;
 
 class Boleto extends PagSeguro
