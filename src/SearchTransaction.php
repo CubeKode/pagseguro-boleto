@@ -1,6 +1,9 @@
 <?php
-include_once "core/PagSeguro.php";
-include_once "core/Utils.php";
+
+namespace PagSeguro;
+
+use PagSeguro\Core\Utils;
+use PagSeguro\Core\PagSeguro;
 
 class SearchTransaction extends PagSeguro
 {

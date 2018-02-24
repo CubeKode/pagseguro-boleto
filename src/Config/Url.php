@@ -1,5 +1,7 @@
 <?php
 
+namespace PagSeguro\Config;
+
 /**
  * Class URL
  */

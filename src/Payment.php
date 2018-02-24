@@ -1,7 +1,9 @@
 <?php
 
-include_once "core/Utils.php";
-include_once "core/PagSeguro.php";
+namespace PagSeguro;
+
+use PagSeguro\Core\Utils;
+use PagSeguro\Core\PagSeguro;
 
 class Payment extends PagSeguro
 {

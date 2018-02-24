@@ -8,6 +8,11 @@
             "homepage": "https://cubekode.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "PagSeguro\\": "src/"
+        }
+    },
     "require": {
         "php": ">=5.4.45"
     },

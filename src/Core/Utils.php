@@ -6,6 +6,8 @@
  * Time: 15:49
  */
 
+namespace PagSeguro\Core;
+
 class Utils
 {
     static public function onlyNumbers($number)

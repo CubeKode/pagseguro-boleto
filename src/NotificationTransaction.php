@@ -1,14 +1,15 @@
 <?php
 
-include_once "core/PagSeguro.php";
-include_once "core/Utils.php";
+namespace PagSeguro;
 
-class TransactionDetails extends PagSeguro
+use PagSeguro\Core\PagSeguro;
+
+class NotificationTransaction extends PagSeguro
 {
     private $code = null;
     private $seguiment = array(
-        'v2' => 'v2/transactions/',
-        'v3' => 'v3/transactions/',
+        'v2' => 'v2/transactions/notifications/',
+        'v3' => 'v3/transactions/notifications/',
     );
     private $version = 'v3';
     public $result = false;
@@ -18,9 +19,9 @@ class TransactionDetails extends PagSeguro
         parent::__construct();
 
         $this->code = $code;
-        if (strlen($this->code) !== 32 && strlen($this->code) !== 36) {
-            //PagSeguro error code 13003
-            throw new InvalidArgumentException('invalid transactionCode value: ' . $this->code);
+        if (strlen($this->code) !== 36 && strlen($this->code) !== 39) {
+            //PagSeguro error code 13001
+            throw new InvalidArgumentException('invalid notification code value: ' . $this->code);
         }
         $this->setVersion($version);
         $this->result = $this->send();

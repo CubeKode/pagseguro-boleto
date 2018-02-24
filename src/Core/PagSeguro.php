@@ -1,7 +1,10 @@
 <?php
-include_once dirname(__FILE__) . "/../config/Config.php";
-include_once dirname(__FILE__) . "/../config/Url.php";
-include_once "Curl.php";
+
+namespace PagSeguro\Core;
+
+use PagSeguro\Config\Config;
+use PagSeguro\Config\Url;
+use PagSeguro\Core\Curl;
 
 class PagSeguro
 {

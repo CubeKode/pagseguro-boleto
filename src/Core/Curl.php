@@ -1,4 +1,7 @@
 <?php
+
+namespace PagSeguro\Core;
+
 class Curl
 {
     private $header = array();

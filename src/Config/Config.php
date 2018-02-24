@@ -1,6 +1,8 @@
 <?php
 date_default_timezone_set('America/Sao_Paulo');
 
+namespace PagSeguro\Config;
+
 /**
  * Class Config
  */
@@ -76,4 +78,3 @@ class Config
         }
     }
 }
-
