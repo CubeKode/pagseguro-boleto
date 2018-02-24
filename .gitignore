@@ -70,4 +70,3 @@ fabric.properties
 /source/Config.php.dev
 
 /vendor/
-composer.lock
