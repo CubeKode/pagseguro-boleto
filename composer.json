@@ -1,10 +1,10 @@
 {
-    "name": "sounoob/pagseguro",
+    "name": "cubekode/pagseguro-boleto",
     "license": "MIT",
     "authors": [
         {
-            "name": "SouNoob",
-            "email": "OpenSource@sounoob.com.br"
+            "name": "CubeKode Tecnologia",
+            "email": "contato@cubekode.com"
         }
     ],
     "require": {

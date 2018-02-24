@@ -13,7 +13,7 @@ class Config
     /**
      * @var string
      */
-    private static $email = 'dev@sounoob.com.br';
+    private static $email = 'mail@example.org';
     /**
      * @var string
      */

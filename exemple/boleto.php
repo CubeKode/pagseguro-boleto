@@ -3,7 +3,7 @@ include '../source/Boleto.php';
 
 //Config::setProduction();
 //Config::setSandbox();
-//Config::setAccountCredentials('dev@sounoob.com.br', '5179DCD806314BD6A77B774DF6148CA9', false);
+//Config::setAccountCredentials('email@example.org', '5179DCD806314BD6A77B774DF6148CA9', false);
 
 
 $boleto = new Boleto();
@@ -13,15 +13,15 @@ $boleto = new Boleto();
 //Valor de cada boleto. Caso sua conta não absorver a taxa do boleto, será acrescentado 1 real no valor do boleto.
 $boleto->setAmount('5.12');
 //Descrição do boleto
-$boleto->setDescription('Assinatura SDK SNoob');
+$boleto->setDescription('Simple Service');
 //O CPF do comprador
-$boleto->setCustomerCPF('01234567890');//Se for CNPJ use $boleto->setCustomerCNPJ('33085736000169');
+$boleto->setCustomerCPF('01234567890');//Se for CNPJ use $boleto->setCustomerCNPJ('26668547000153');
 //Nome do comprador
-$boleto->setCustomerName('Noob Master');
+$boleto->setCustomerName('Customer Name');
 //Email do comprador
-$boleto->setCustomerEmail('financeiro@sounoob.com.br');
+$boleto->setCustomerEmail('email@example.org');
 //Telefone do comprador
-$boleto->setCustomerPhone('11', '98909084');
+$boleto->setCustomerPhone('55', '32510031');
 
 
 /*
@@ -32,21 +32,21 @@ $boleto->setFirstDueDate(date("Y-m-d", strtotime("+3 days", time())));
 //Esse é o numero de boletos a ser gerado.
 $boleto->setNumberOfPayments(2);
 //Uma referência de quem é o boleto (note que terá multiplos boletos com a mesma referência)
-$boleto->setReference('Referencia Qualquer');//**
+$boleto->setReference('Simple reference');//**
 //Instruções para quem irá receber o pagamento
-$boleto->setInstructions('Aloprar o comprador se ele tentar pagar atrasado');
+$boleto->setInstructions('Simple instruction');
 //CEP do comprador
-$boleto->setCustomerAddressPostalCode('01230000');
+$boleto->setCustomerAddressPostalCode('97700000');
 //Endereço do comprador
-$boleto->setCustomerAddressStreet('Av Faria lima');
+$boleto->setCustomerAddressStreet('Av Julio de Castilhos');
 //Numero da casa do comprador
-$boleto->setCustomerAddressNumber('103 A');
+$boleto->setCustomerAddressNumber('518');
 //Bairro do comprador
-$boleto->setCustomerAddressDistrict('Vila Olimpia');
+$boleto->setCustomerAddressDistrict('Centro');
 //Cidade do comprador
-$boleto->setCustomerAddressCity('São Paulo');
+$boleto->setCustomerAddressCity('Santiago');
 //Estado do comprador
-$boleto->setCustomerAddressState('SP');
+$boleto->setCustomerAddressState('RS');
 
 
 //Executa a conexão e captura a resposta do PagSeguro.
